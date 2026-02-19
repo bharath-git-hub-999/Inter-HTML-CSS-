@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid exercise 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul,
+      li {
+        display: inline;
+      }
+      nav {
+        background-color: brown;
+        grid-area: nav;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10vh 20vh 20vh 20vh 20vh 20vh;
+        grid-template-areas:
+          "nav nav nav nav"
+          "d tw gma gma"
+          "bbc tw gma gma"
+          "do do tw2 man "
+          "do do tw2 che"
+          "br che2 ez che3";
+      }
+      .DYNAMIT {
+        padding: 50px;
+        grid-area: d;
+        background-color: orangered;
+        color: white;
+        font-size: 20px;
+        justify-content: center;
+      }
+      .TWITTER {
+        grid-area: tw;
+        background-color: aqua;
+      }
+      .GMA {
+        grid-area: gma;
+        background-color: darkcyan;
+      }
+      .BBC {
+        grid-area: bbc;
+      }
+      .do {
+        grid-area: do;
+      }
+      .TWITTER2 {
+        grid-area: tw2;
+        background-color: aqua;
+      }
+      .man {
+        grid-area: man;
+      }
+      .che {
+        grid-area: che;
+        background-color: sandybrown;
+      }
+
+      .bricks {
+        grid-area: br;
+      }
+      .che2 {
+        grid-area: che2;
+        background-color: sandybrown;
+      }
+
+      .ezgo {
+        grid-area: ez;
+        background-color: grey;
+        color: burlywood;
+        text-align: center;
+
+      }
+      .che3 {
+        grid-area: che3;
+        background-color: sandybrown;
+      }
+
+      .layout div {
+        border: 1px solid black;
+        display: grid;
+      }
+      .GMA h1 {
+        color: white;
+        font-size: 50px;
+      }
+      .gmanav {
+        background-color: blue;
+      }
+
+      .GMA {
+        display: flex;
+      }
+      .BBC {
+        background-color: black;
+      }
+      .b {
+        background-color: white;
+        color: black;
+        height: 20px;
+        width: 20px;
+      }
+      .b2 {
+        background-color: white;
+        color: black;
+        height: 20px;
+        width: 20px;
+      }
+      .c {
+        background-color: white;
+        color: black;
+        height: 20px;
+        width: 20px;
+      }
+
+      .BBC {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .TWITTER p{
+        color: white;
+      }
+      .TWITTER2 p{
+        color: aliceblue;
+      }
+      .EZGO
+      
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <nav>
+        <ul>
+          <li>worker</li>
+          <li>company</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+      <div class="DYNAMIT">
+        <h2>DYNAMITE</h2>
+      </div>
+      <div class="TWITTER">
+        <h2>TWITTER</h2>
+        <p>
+          Tablets & Smartphones will Truly Start Killing tho PC in 2015,Says
+          Report http://t.co/wktpCop
+        </p>
+        <p><i>Posted on mon , sep 12 by phil_franks</i></p>
+      </div>
+      <div class="GMA">
+        <nav class="gmanav">
+          <h1>GMA</h1>
+          <ul>
+            <li><i>strong Medicine for Healthy california Communities</i></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="BBC">
+        <div class="b">B</div>
+        <div class="b2">B</div>
+        <div class="c">C</div>
+      </div>
+      <div class="do">DO TOY LIKE IT HOT?(DO)</div>
+      <div class="TWITTER2">
+       <h2>TWITTER</h2>
+        <p>
+          How unique and trackable is your web broeser config? Panopticlick
+          explains fingorprinting and tosts your set up. http://t.co/Opf\5WF<br /><i
+            >Posted on Sun,Se 11 by ahunt</i
+          >
+        </p>
+      </div>
+      <div class="man">MAN ON CHAIR(MAN)</div>
+      <div class="che">
+        <h3>CHICKENS</h3>
+        <p>Jonathan poma is at NSNE steakhouse in LAs Vegas,NV<br><i>sat,sep 10</i></p>
+      </div>
+      <div class="bricks">BRICKS(BR)</div>
+      <div class="che2">
+        <h2>CHECKINS</h2>
+        <p>Phil Franks and 2 others are at Chicago Midwaty </p>
+      </div>
+      <div class="che3">
+        <h2>CHECKINS</h2>
+        <p>Phil Franks and 2 others are at Chicago Midwaty </p>
+      </div>
+      <div class="ezgo">
+        <h1>EZGO</h1>
+      </div>
+    </div>
+  </body>
+</html>

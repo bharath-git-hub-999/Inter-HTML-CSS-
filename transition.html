@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition-animation</title>
+    <style>
+        /* .box{
+            background-color: black;
+            width: 300px;
+            height: 300px;
+            
+        }
+        .box:hover{
+            background-color: aqua;
+            width: 100%;
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+            transform: rotateX('90');
+        } */
+
+        .box{
+            background-color: blueviolet;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            animation-name: circle;
+            animation-duration: 10s;
+        }
+
+        @keyframes circle{
+            50%{
+                background-color: black;
+                width: 400px;
+                height: 100px;
+            }
+            100%{
+                background-color:red;
+                width:600px;
+                heigth:900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
